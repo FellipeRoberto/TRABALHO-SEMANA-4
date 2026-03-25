@@ -23,11 +23,12 @@ main{
     padding: 10px;
 }
 aside{
-    background-color: whitesmoke;
+    background-color: rebeccapurple;
     width: 30%;
     float: left;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
 
 
 .links_topo{
@@ -57,4 +58,10 @@ aside{
 }
 .artistas img{
     display: block;
+}
+footer{
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
 }
