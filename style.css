@@ -1,67 +1,90 @@
+/* TUDO*/
 * {
     margin: 0;
-    border: 0;
-
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    background-color: violet;
-    height: 200px;
-}
 
-main{
-    background-color:blueviolet;
-    width: 70%;
-    float: left;
-    box-sizing: border-box;
+/* HEADER */
+header {
+    background-color: purple;
+    width: 100%;
     padding: 10px;
 }
-aside{
-    background-color: rebeccapurple;
-    width: 30%;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
+
+/* MENU DO TOPO */
+.nome_site{
+    color: aliceblue;
 }
-
-
-.links_topo{
-    float: right;
-    margin-top: 20px;
+.topo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
-
+.busca input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
 .links_topo ul {
-    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
-.links_topo ul li {
-    display: inline-block;
-}
+
 .links_topo ul li a {
+    display: block;
     color: white;
     background-color: black;
     padding: 10px;
-    
     font-weight: bold;
+    text-decoration: none;
 }
-.links_topo ul li a :hover{
-    color: pink;
+
+.links_topo ul li a:hover {
+    color: purple;
 }
-.artistas{
+
+/* CONTAINER PRINCIPAL */
+.container {
+    display: flex;
+    flex-wrap: nowrap; 
+    width: 100%;
+}
+
+/* MAIN */
+main {
+    background-color: lightblue;
+    flex: 70%; 
+    padding: 10px;
+}
+
+/* ASIDE */
+aside {
+    background-color: lightcyan;
+    flex: 30%;
+    padding: 10px;
+}
+
+/* ARTISTAS */
+.artistas {
     margin-bottom: 40px;
-    clear: both;
 }
-.artistas img{
+
+.artistas img {
     display: block;
+    max-width: 100%;
 }
-footer{
+
+/* FOOTER */
+footer {
     background-color: yellow;
-    clear: both;
     text-align: center;
     padding: 10px 0;
 }
+
