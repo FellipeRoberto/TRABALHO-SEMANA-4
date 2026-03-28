@@ -88,3 +88,38 @@ footer {
     padding: 10px 0;
 }
 
+/* (CELULAR) */
+@media (max-width: 768px) {
+
+    /* layout principal */
+    .container {
+        flex-wrap: wrap;
+    }
+
+    main, aside {
+        width: 100%;
+        flex: 100%;
+    }
+
+    /* menu */
+    .links_topo ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    /* header com pesquisa */
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* barra de busca */
+    .busca {
+        width: 100%;
+    }
+
+    .busca input {
+        width: 100%;
+    }
+}
